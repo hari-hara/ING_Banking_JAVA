@@ -45,7 +45,7 @@ public class BankingController {
 		LoginResponse responseObject = new LoginResponse();
 		BankUser user = bankingService.findByUserName(bankUser.getUsername(),bankUser.getPwd());
 	
-		System.out.println("testing in login "+user.getAccountno()+user.getRole());
+		//System.out.println("testing in login "+user.getAccountno()+user.getRole());
 		if(null != user) {
 		responseObject = new LoginResponse();
 		responseObject.setMessage("login successful");
