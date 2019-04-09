@@ -9,7 +9,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-
 @Entity
 @Table(name = "user_transaction")
 public class UserTransaction {
@@ -18,12 +17,12 @@ public class UserTransaction {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 
-	
 	@Column(name = "accountno")
 	private int accountno;
-	
+
 	@Column(name = "to_account")
 	private int toAccount;
+
 	@Column(name = "username")
 	private String userName;
 
@@ -36,7 +35,7 @@ public class UserTransaction {
 	@Column(name = "credit")
 	private double credit;
 
-	@Column(name = "current_datatime")
+	@Column(name = "current_datetime")
 	private LocalDateTime currentDate;
 
 	public LocalDateTime getCurrentDate() {
@@ -85,6 +84,22 @@ public class UserTransaction {
 
 	public void setCredit(double credit) {
 		this.credit = credit;
+	}
+
+	public int getToAccount() {
+		return toAccount;
+	}
+
+	public void setToAccount(int toAccount) {
+		this.toAccount = toAccount;
+	}
+
+	public String getUserName() {
+		return userName;
+	}
+
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 
 }

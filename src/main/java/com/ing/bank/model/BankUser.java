@@ -3,9 +3,12 @@ import java.time.LocalDateTime;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
@@ -30,10 +33,24 @@ public class BankUser{
 	@Column(name="accounttype", nullable=false)
 	private String accounttype;
 	
+	/*@OneToOne(fetch=FetchType.EAGER)
+	@JoinColumn(name="accountno")
+	private UserTransaction userTransaction;
+	
+	public UserTransaction getUserTransaction() {
+		return userTransaction;
+	}
+
+	public void setUserTransaction(UserTransaction userTransaction) {
+		this.userTransaction = userTransaction;
+	}*/
+	
 	@Transient
 	@Column(name="created_on", nullable=false)
 	private LocalDateTime created_on;
 	
+	@Transient
+	private double totalAmount;
 	
 	public int getAccountno() {
 		return accountno;
@@ -81,6 +98,14 @@ public class BankUser{
 
 	public void setCreated_on(LocalDateTime created_on) {
 		this.created_on = created_on;
+	}
+
+	public double getTotalAmount() {
+		return totalAmount;
+	}
+
+	public void setTotalAmount(double totalAmount) {
+		this.totalAmount = totalAmount;
 	}
 
 }

@@ -8,6 +8,26 @@ public class LoginResponse {
 	private String message;
 
 	private String role;
+	
+	private String accountno;
+	
+	private String userName;
+
+	public String getUserName() {
+		return userName;
+	}
+
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+
+	public String getAccountno() {
+		return accountno;
+	}
+
+	public void setAccountno(String accountno) {
+		this.accountno = accountno;
+	}
 
 	public String getMessage() {
 		return message;
