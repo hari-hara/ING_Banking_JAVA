@@ -22,6 +22,11 @@ public class UserTransaction {
 	
 	@Column(name = "accountno")
 	private int accountno;
+	
+	@Column(name = "to_account")
+	private int toAccount;
+	@Column(name = "username")
+	private String userName;
 
 	@Column(name = "total_amount")
 	private double totalAmount;
