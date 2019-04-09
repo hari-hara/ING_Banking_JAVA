@@ -60,7 +60,18 @@
 			<version>2.4.0</version>
 		</dependency>
 	</dependencies>
-
+	<distributionManagement>
+		<repository>
+			<id>deployment</id>
+			<name>Release</name>
+			<url>http://35.154.179.135:8081/nexus/content/repositories/releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>deployment</id>
+			<name>Internal Snapshot Releases</name>
+			<url>http://35.154.179.135:8081/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
 	<build>
 		<plugins>
 			<plugin>
