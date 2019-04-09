@@ -1,0 +1,9 @@
+ABC Retail Banking Application
+
+Executive Summary
+
+Objective – The objective of this application to automates daily banking operations. 
+This application facilitates Banker to manage bank account at the high level like opening a new account 
+for each individuals/ updating the each individuals account information’s. It will help each individual 
+account owner to manage their account as well. It also provides one search tool that help bankers/ investors 
+to search records based on account owner name and existing account number. It implements role base access to each web page. 
