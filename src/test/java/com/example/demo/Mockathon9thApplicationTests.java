@@ -4,13 +4,13 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-@Ignore
-@RunWith(SpringRunner.class)
-@SpringBootTest
-public class Mockathon9thApplicationTests {
 
+//@RunWith(SpringRunner.class)
+//@SpringBootTest
+public class Mockathon9thApplicationTests {
+/*
 	@Test
 	public void contextLoads() {
-	}
+	}*/
 
 }
