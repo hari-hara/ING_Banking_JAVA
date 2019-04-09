@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>Mockathon9th</artifactId>
-	<version>1.0.1-RELEASES</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<name>Mockathon9th</name>
 	<description>Demo project for Spring Boot</description>
 
@@ -61,10 +61,11 @@
 		</dependency>
 	</dependencies>
 	<distributionManagement>
-		<repository>
-    <id>1234</id>
-    <url>http://35.154.179.135:8081/nexus/content/repositories/1234</url>
-  </repository>
+		<snapshotRepository>
+   		 	<id>snapshots</id>
+    			<url>http://35.154.179.135:8081/nexus/content/repositories/snapshots</url>
+  		</snapshotRepository>
+
 	</distributionManagement>
 	<build>
 		<plugins>
